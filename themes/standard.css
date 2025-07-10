@@ -1,0 +1,70 @@
+/* @theme standard */
+
+@import "default"; /* defaultテーマのCSSを継承 */
+
+/* h1: スライドタイトル - 画面最上部、白文字、青背景 */
+section h1 {
+  font-size: 36px;
+  color: white;
+  background-color: #0066cc;
+  margin: 0;
+  padding: 10px 10px 10px 40px; /* 左側の余白を広めにする*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* h2: キーセンテンス - 強調表示、太字 */
+section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* h3: サブセンテンス - 通常の太さ */
+section h3 {
+  font-size: 36px;
+  font-weight: normal;
+  color: #333;
+  text-align: left;
+}
+
+/* セクション全体の調整 */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 60px 60px 60px;
+}
+
+/* 標準テキストのサイズ調整 */
+section p,
+section li {
+  font-size: 32px;
+  line-height: 1.6;
+}
+
+/* リストのスタイル */
+section ul,
+section ol {
+  font-size: 32px;
+  line-height: 1.6;
+}
+
+section h1::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  background: url("./assets/icon.png") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
