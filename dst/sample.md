@@ -4,9 +4,9 @@ theme: standard
 paginate: true
 ---
 
-# sample
+![bg](./assets/bg.png)
 
-sample slide
+## sample slide
 
 ---
 
